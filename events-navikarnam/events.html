@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- ALL LINKS  -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Prodyogeeky</title>
+</head>
+<body class="dark">
+
+	<!-- HEADER  -->
+
+	<header class="header">
+		<div class="logo-container">
+			<img src="images/logo.png">
+		</div>
+
+		<nav class="navbar-items">
+			<a href="../index.html">HOME</a>	
+			<a href="../events/events.html">EVENTS</a>
+			<a href="../register/register.html">REGISTER</a>
+		</nav>
+
+		<button class="bx bx-menu menu-icon" onclick="toggleMenu()"></button>
+	</header>
+
+	<div class="menu">
+    <div class="menu-content">
+      <div class="menu-head">PRODYOGEEKY</div>
+      <div class="menu-list">
+
+        <div class="menu-home">
+          <a href="../index.html" onclick="toggleMenu()">HOME</a>
+        </div>
+
+        <div class="menu-home">
+						<a href="../index.html#about" onclick="toggleMenu()">ABOUT</a>
+        </div>
+
+        <div class="menu-home active">
+					<a href="#events" onclick="toggleMenu()">EVENTS</a>
+        </div>
+
+				<div class="menu-home">
+					<a href="../index.html#contact" onclick="toggleMenu()">CONTACT</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="../register/register.html" onclick="toggleMenu()">REGISTER</a>
+        </div>
+
+        <div class="menu-home">
+					<a href="..sponsor/sponsor.html" onclick="toggleMenu()">SPONSOR</a>
+        </div>
+      </div>
+
+			<div class="menu-socials">
+				<button class="btn">
+					<i class='bx bxl-facebook' ></i>
+				</button>
+
+				<button class="btn">
+					<i class='bx bxl-instagram' ></i>
+				</button>
+
+				<button class="btn">
+					<i class='bx bxl-linkedin' ></i>
+				</button>
+			</div>
+
+    </div>
+    <div class="menu-sidebar">
+      <button class="close-button" onclick="toggleMenu()">X</button>
+    </div>
+  </div>
+
+	<!-- MAIN CONTENT -->
+
+	<main>
+
+		<div class="bg-container"></div>
+	
+			<div class="container">
+				<div class="item-container">
+					<div class="img-container">
+							<img src="./images/innovative.jpg" alt="Event image">
+					</div>
+
+					<div class="body-container">
+							<div class="overlay"></div>
+
+								<div class="event-info">
+										<p class="title">Young Scienctist Innovation</p>
+										<div class="separator"></div>
+										<p class="info">NIT UK, Srinagar</p>
+										<p class="price">Included with Pass</p>
+
+										<div class="additional-info">
+												<p class="info">
+														<i class="fas fa-map-marker-alt"></i>
+														Venue : NIT, Uttarakhand
+												</p>
+												<p class="info">
+														<i class="far fa-calendar-alt"></i>
+														1 March - 3 March 2024
+												</p>
+
+												<p class="info description">
+													Students belonging to schools within Uttarakhand are eligible for this competition where students
+must come up with practical ideas which may contribute for the betterment of our state
+Uttarakhand. Team with minimum 3 members are eligible.
+
+												</p>
+										</div>
+								</div>
+								<button class="action" onclick = "window.location.href='../register/register.html'">register</button>
+						</div>
+				</div>
+		<div class="item-container">
+			<div class="img-container">
+							<img src="./images/abstract.jpg" alt="Event image">
+					</div>
+
+					<div class="body-container">
+							<div class="overlay"></div>
+
+							<div class="event-info">
+									<p class="title">Abstract Idea Submission</p>
+									<div class="separator"></div>
+									<p class="info">NIT UK, Srinagar</p>
+										<p class="price">Included with Pass</p>
+
+										<div class="additional-info">
+											<p class="info">
+												<i class="fas fa-map-marker-alt"></i>
+												Venue : NIT, Uttarakhand
+										</p>
+										<p class="info">
+												<i class="far fa-calendar-alt"></i>
+												1 March - 3 March 2024
+										</p>
+
+												<p class="info description">
+													Students from different universities and colleges are eligible for this competition where students
+must come up with practical ideas which may contribute for the betterment of our country. Team
+with minimum 3 members are eligible.
+												</p>
+									</div>
+							</div>
+							<button class="action" onclick = "window.location.href='../register/register.html'">register</button>
+					</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+<!--=============== GSAP JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--=============== SCROLL TRIGGER JS ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!--=============== Baffle JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+
+<!--=============== SCMOOTH SCROLL JS ===============-->
+<script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.1/dist/smooth-scrollbar.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="script.js">
+	document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Smooth Scrollbar on the body element
+    const bodyScrollbar = Scrollbar.init(document.body);
+
+    // Enable smooth scrolling
+    bodyScrollbar.setPosition(0, 0, 0);
+  });
+</script>
+</html>
